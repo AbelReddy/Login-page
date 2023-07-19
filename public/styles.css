@@ -1,0 +1,179 @@
+nav {
+    background-color:black;
+    display: flex;
+    min-height:50px;
+    padding: 0 0 0 100px;
+}
+
+.navbar{
+    display: flex;
+    position: absolute;
+    right:100px;
+}
+
+.brand{
+    display: inline-block;
+    width: 100px;
+    padding:25px 25px;
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    color:#fff;
+
+}
+
+.navbar  a {
+    text-decoration: none;
+    cursor: pointer;
+    min-width:100px;
+    padding: 25px 25px;
+    font-size: larger;
+   display: block;
+    color:#fff;
+    text-align: center;
+    
+
+}
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar li a:hover,
+  .brand:hover{
+    transform: scale(1.2);
+    color:aquamarine;
+}
+
+
+.home h1{
+    text-align: center;
+    margin-top: 250px;
+    border: 1px solid aquamarine;
+    background-color: black;
+    color: white;
+    width:80%;
+    position:relative;
+    left:10%    ;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    width:100%;
+    height:50px;
+    padding: 20px 25px;
+}
+
+/* Login page */
+label{
+    display:block;
+    padding: 20px 0;
+    font-size: 26px;
+    text-align: left;
+}
+
+form h3{
+  color:red;
+}
+input{
+    padding: 20px 0px;
+    padding-left: 10px;
+    min-width:100%;
+    font-size: 20px;
+    color:aliceblue;
+    background-color: black;
+}
+
+main{
+    max-width: 500px;
+    height:600px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button{
+    margin-top:30px;
+    width:50%;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+/* CSS */
+button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}

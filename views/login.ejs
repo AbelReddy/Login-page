@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class = "brand">
+            Delco
+        </div>
+        <div class = "navbar">
+            <li><a href="/">Home</a></li>
+           <li><a href="/register">Register</a></li> 
+           <li><a href="/Bankdetails">Bank Details</a></li> 
+        </div>
+      </nav>
+
+      <main>
+        <h1>Login Page</h1>
+        <form action="/login" method="post">
+             <h3><%=message%></h3>
+            <label for="">Email : </label>
+            <input type="email" name="name" id="" placeholder="Enter your email"><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="" placeholder="Enter your password">
+            <button type="submit"> Enter</button>
+        </form>
+      </main>
+
+ 
+</body>
+
+<%-include("partials/footer")-%>
+
+</html>
